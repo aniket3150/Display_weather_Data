@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5vh;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px 2px rgb(180, 180, 164);
+  position: relative;
+}
+
+.search-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.search-box button {
+  background-color: #181c18;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button i {
+  font-size: 1.2rem;
+}
+
+.container h2 {
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.fa-cloud {
+  color: rgb(206, 206, 76);
+}
+
+.location {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+.CityName {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+.TimeZone {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-top: 4px;
+}
+
+.weather_data {
+  width: 100%;
+  text-align: center;
+}
+
+.weather_data p {
+  font-size: 2rem;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.weather_info {
+  width: 90vw;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.weather_info .cards {
+  padding: 30px;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.cards .card1,
+.cards .card2,
+.cards .card3,
+.cards .card4 {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px rgb(180, 180, 164);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.weather_text {
+  margin-left: 50px;
+  margin-top: -45px;
+}
+
+.weather_text .Headline {
+  font-weight: bold;
+}
+
+/* Responsive CSS for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 95vw;
+    margin-top: 5vh;
+  }
+
+  .weather_info .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .weather_text {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .cards .card1,
+  .cards .card2,
+  .cards .card3,
+  .cards .card4 {
+    width: 80vw;
+  }
+
+  .weather_data {
+    width: 100%;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+    margin-top: 5vh;
+  }
+
+  .weather_info .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  h2{
+
+    margin-top: 12vh;
+  }
+
+  .icon{
+    margin-left: 65px;
+  }
+
+  .cards .card1,
+  .cards .card2,
+  .cards .card3,
+  .cards .card4 {
+    width: 90vw;
+    margin-left: 45px;
+    
+  }
+
+  .search-box input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .search-box button {
+    width: 60%;
+    padding: 12px;
+  }
+
+  .CityName {
+    font-size: 1.1rem;
+  }
+
+  .TimeZone {
+    font-size: 0.9rem;
+  }
+
+  .location {
+    font-size: 1.2rem;
+  }
+
+  .weather_data p {
+    font-size: 1.5rem;
+  }
+}
